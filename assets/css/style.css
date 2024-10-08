@@ -1855,9 +1855,8 @@ ul {
     z-index: 22;
 }
 .service-wrapper .secting-heading{
-    position: sticky;
-    top: 120px;
-    height: max-content;
+    position: relative;
+    z-index: 11;
 }
 .service-wrapper::before{
     position: absolute;
@@ -2118,9 +2117,12 @@ ul {
     position: relative;
     z-index: 22;
 }
-.blog-img{
-    border-radius: 24px;
-    overflow: hidden;
+.blog-img img{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .blog-description-title a{
     transition: all 0.3s ease-in-out;
@@ -2375,19 +2377,15 @@ ul {
     justify-content: space-between;
 }
 
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
-}
+
 .footer-bottom {
-    border-top:  1px solid #9A9A9C;
-    padding-top: 22px;
+    padding-top: 12px;
 }
-.footer-bottom .social-icon{
+ .social-icon{
     display: flex;
     gap: 10px;
 }
-.footer-bottom .social-icon a {
+ .social-icon a {
     background-color: #FFFFFF00;
     height: 40px;
     border-style: solid;
@@ -2400,11 +2398,23 @@ ul {
     justify-content: center;
     color: var(--white);
 }
-.footer-bottom .social-icon a:hover {
+ .social-icon a:hover {
     opacity: .9;
     color: #fff;
     background-color: var(--secondary);
     border-color: var(--secondary);
+}
+.subscribe-form .form-group {
+    position: relative;
+}
+.default-outline-2:hover,
+.default-outline-2{
+    border-color: var(--secondary);
+    background: transparent;
+}
+.subscribe-form .form-group .default-btn:hover{
+    background: var(--white);
+    color: var(--primary);
 }
 
 /* Normal desktop :992px. */
@@ -2442,7 +2452,8 @@ ul {
 
 .testimonial-area {
     position: relative;
-    height: 100%;
+    background-color: #FFFCE5;
+    padding: 75px 0px;
   }
   .testimonial-link {
     display: inline-block;
@@ -2553,6 +2564,9 @@ animation: fadeIn 0.8s both 0.2s;
     top: auto;
     margin-top: -45px;
     z-index: 12;
+}
+.swiper-wrapper {
+    padding: 10px;
 }
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
