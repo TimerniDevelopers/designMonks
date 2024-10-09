@@ -16,7 +16,8 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <!-- swiper Slider CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -351,7 +352,7 @@
             </div>
         </div>
     </section>
-    <section class="work-area d-none">
+    <section class="work-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-9 col-lg-10 col-md-12">
@@ -971,119 +972,137 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-area d-none">
+       <!-- Testimonial Section Begin -->
+       <section class="testimonial" >
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-9 col-lg-11 col-md-12">
+            <div class="row">
+                <div class="col-lg-12 ">
                     <div class="secting-heading text-center">
-                        <h3 class="sub-title">Testimonial</h3>
-                        <h3 class="section-title">Our satisfied customers
-                           <br>  feedback
-                        </h3>
-                    </div>
-                      <!-- Swiper -->
-                    <div class="swiper mySwiper mt-50">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-flex">
-                                    <div class="testimonial-img">
-                                        <img src="assets/img/testimonial.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content-wrapper">
-                
-                                        <div class="testimonial-content">
-                                            <h3><a href="javascript:void(0)" class="testimonial-link ">View Case Study	</a></h3>
-                                            <p>We used Design Monks for two projects and they were reliable and creative. Their design solutions worked well for what we needed and they helped create a good theme/style for our websites. I would highly recommend Design Monks.</p>
-                                        <div class="testimonial-bio-wrapper">
-                                                <h4 class="testimonial-name">Sajan Devshi</h4>
-                                                <p class="testimonial-designation">CTO, Ways and Villas</p>
-                                        </div>
-                                        
-                                        </div>
-                                        <div class="testimonial-brand-logo">
-                                            <img src="assets/img/way-and-fly.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-flex">
-                                    <div class="testimonial-img">
-                                        <img src="assets/img/testimonial.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content-wrapper">
-                
-                                        <div class="testimonial-content">
-                                            <h3><a href="javascript:void(0)" class="testimonial-link ">View Case Study	</a></h3>
-                                            <p>We used Design Monks for two projects and they were reliable and creative. Their design solutions worked well for what we needed and they helped create a good theme/style for our websites. I would highly recommend Design Monks.</p>
-                                        <div class="testimonial-bio-wrapper">
-                                                <h4 class="testimonial-name">Sajan Devshi</h4>
-                                                <p class="testimonial-designation">CTO, Ways and Villas</p>
-                                        </div>
-                                        
-                                        </div>
-                                        <div class="testimonial-brand-logo">
-                                            <img src="assets/img/way-and-fly.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-flex">
-                                    <div class="testimonial-img">
-                                        <img src="assets/img/testimonial.png" alt="">
-                                    </div>
-                                    <div class="testimonial-content-wrapper">
-                
-                                        <div class="testimonial-content">
-                                            <h3><a href="javascript:void(0)" class="testimonial-link ">View Case Study	</a></h3>
-                                            <p>We used Design Monks for two projects and they were reliable and creative. Their design solutions worked well for what we needed and they helped create a good theme/style for our websites. I would highly recommend Design Monks.</p>
-                                        <div class="testimonial-bio-wrapper">
-                                                <h4 class="testimonial-name">Sajan Devshi</h4>
-                                                <p class="testimonial-designation">CTO, Ways and Villas</p>
-                                        </div>
-                                        
-                                        </div>
-                                        <div class="testimonial-brand-logo">
-                                            <img src="assets/img/way-and-fly.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-controls">
-                            <div class="swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <g clip-path="url(#clip0_1320_3182)">
-                                    <path d="M9.54058 8.49662L3.55502 14.4824C3.39021 14.6469 3.29954 14.8667 3.29954 15.1011C3.29954 15.3356 3.39021 15.5554 3.55502 15.72L4.07951 16.2443C4.24406 16.4092 4.46403 16.5 4.69843 16.5C4.93284 16.5 5.15255 16.4092 5.31723 16.2443L12.444 9.11763C12.6093 8.95242 12.6999 8.73168 12.6992 8.49701C12.6999 8.2613 12.6095 8.04081 12.444 7.87548L5.32386 0.755742C5.15918 0.590798 4.93947 0.500002 4.70494 0.500002C4.47053 0.500002 4.25082 0.590798 4.08601 0.755742L3.56165 1.27997C3.22045 1.62117 3.22045 2.17662 3.56165 2.51769L9.54058 8.49662Z" fill="#353539"></path>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1320_3182">
-                                        <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
-                                    </clipPath>
-                                </defs>
-                            </svg></div>
-                            <div class="swiper-button-prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                    <g clip-path="url(#clip0_1320_3175)">
-                                        <path d="M6.45942 8.50338L12.445 2.51756C12.6098 2.35314 12.7005 2.1333 12.7005 1.89889C12.7005 1.66436 12.6098 1.44465 12.445 1.27997L11.9205 0.75574C11.7559 0.590797 11.536 0.5 11.3016 0.5C11.0672 0.5 10.8475 0.590797 10.6828 0.75574L3.556 7.88237C3.39067 8.04758 3.30013 8.26832 3.30078 8.50299C3.30013 8.7387 3.39054 8.95919 3.556 9.12452L10.6761 16.2443C10.8408 16.4092 11.0605 16.5 11.2951 16.5C11.5295 16.5 11.7492 16.4092 11.914 16.2443L12.4383 15.72C12.7796 15.3788 12.7796 14.8234 12.4383 14.4823L6.45942 8.50338Z" fill="#353539"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1320_3175">
-                                            <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                     
+                        <h3 class="sub-title">Testimonials</h3>
+                        <h3 class="section-title ">What your clients say</h3>
                     </div>
                 </div>
             </div>
-            
-    
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial__carousel">
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <div class="video-btn mb-3">
+                                        <a href="https://www.youtube.com/watch?v=OVTVcl5XSfg" class="play-now lightbox-image">
+                                            <i class="fas fa-play"></i>
+                                         </a> 
+                                    </div>
+                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <div class="video-btn mb-3">
+                                        <a href="https://www.youtube.com/watch?v=OVTVcl5XSfg" class="play-now lightbox-image">
+                                            <i class="fas fa-play"></i>
+                                         </a> 
+                                    </div>
+                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 ">
+                    <div class="testimonial__client">
+                        <div class="testimonial__client__item add">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-1.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Dr. Shah Siddiqui</h5>
+                                <span>CEO, TRI</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-2.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-3.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-4.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-5.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Testimonial Section End -->
     <section class="faq-area">
         <div class="container">
             <div class="secting-heading text-center">
@@ -1218,7 +1237,7 @@
                             <p>Beyond being a top UI UX design hub, we’re your one-stop for research, wireframing, design, and development!</p>
                         </div>
                     </div>
-                    <div class="social-icon">
+                    <div class="social-icon mt-3">
                         <a href="javascript:void(0)">
                             <i class="fab fa-instagram"></i>
                         </a>
@@ -1311,7 +1330,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom  text-center">
+        <div class="footer-bottom  text-center mt-3">
             <p >©2024 <a class="text-decoration-underline" href="https://timerni.com/">Timerni</a> All Rights Reserved</p>
           
         </div>
@@ -1326,7 +1345,8 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- carousel slider JS -->
 <script src="assets/js/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.slicknav.js"></script>
+<script src="assets/js/slick.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>
@@ -1357,16 +1377,7 @@ document.addEventListener('DOMContentLoaded', function() {
       playButton.classList.add('hidden');
     });
   });
-  var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+  
 </script>
 </body>
 </html>
