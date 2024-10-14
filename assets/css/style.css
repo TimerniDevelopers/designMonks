@@ -1369,9 +1369,38 @@ ul {
 /* Tablet desktop :768px. */
 @media (min-width: 320px) and (max-width: 991px) {
 
-
+    .header-btn{
+        display: none;
+    }
+    .sidebar__contact h4 {
+        font-size: 20px;
+    }
 }
-
+/* default.tiitle */
+@media (min-width: 320px) and (max-width: 991px) {
+    .default-btn {
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+    .section-title {
+        font-size: 48px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .default-btn {
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+    .section-title {
+        font-size: 55px;
+    }
+}
+@media (max-width: 991px) {
+    .container, .container-sm {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+}
 /* About area  */
 .banner-area{
     padding: 160px 0px 50px;
@@ -1463,10 +1492,15 @@ ul {
 }
 
 /* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1299px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .banner-title{
         font-size: 50px;
         line-height: 1.2;
+    }
+    .banner-bottom {
+
+        padding-bottom: 50px;
+        gap: 30px;
     }
 
 }
@@ -1476,6 +1510,21 @@ ul {
     .banner-title{
         font-size: 45px;
         line-height: 1.2;
+    }
+    .banner-area {
+        padding: 100px 0px 50px;
+        
+    }
+    .banner-bottom {
+        gap: 15px;
+    }
+   
+ 
+}
+/* small mobile :320px. */
+@media (max-width: 576px) {
+    .banner-bottom {
+        flex-direction: column;
     }
  
 }
@@ -1571,7 +1620,9 @@ ul {
 /* small mobile */
 @media (max-width: 991px) {
  
- 
+    .award-box-area {
+        padding: 50px 0px;
+    }
 }
 
 /* home-video-wrapper */
@@ -1639,7 +1690,12 @@ ul {
 
 /* small mobile */
 @media (max-width: 991px) {
- 
+    .home-video-wrapper {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        position: relative;
+        z-index: 11;
+    }
  
 }
 
@@ -1647,7 +1703,7 @@ ul {
 /* who-are */
 
 .who-are{
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 
 /* Normal desktop :992px. */
@@ -1658,7 +1714,9 @@ ul {
 
 /* small mobile  */
 @media (max-width: 991px) {
- 
+    .who-are {
+        padding-bottom: 40px;
+    }
  
 }
 /* work-area */
@@ -2443,11 +2501,8 @@ ul {
 
 
 
-/* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
-}
+
+
 
 /* *---------------------
   Testimonial
