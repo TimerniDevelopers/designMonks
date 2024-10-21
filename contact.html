@@ -104,7 +104,7 @@
                             <div class="main-menu text-center">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li><a href="about.html" class="active">About</a>
+                                        <li><a href="about.html">About</a>
                                         </li>
                                         <li><a href="portfolio.html"> Portfolio</a>
                                         </li>
@@ -112,7 +112,7 @@
                                         </li>
                                         <li><a href="career.html">Career</a>
                                         </li>
-                                        <li><a href="contact.html">Contact</a>
+                                        <li><a class="active" href="contact.html">Contact</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -133,181 +133,312 @@
     </div>
 </header>
 <main>
-    <section class="banner-area about-banner ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-9 col-lg-12 col-md-12 text-center">
-                    <h1 class="banner-title">
-                        Design Leaders for Your Product & Service Needs</h1>
+    <section class="contact-area">
+            <div class="container">
+                <div class="secting-heading text-center mb-5">
+                    <h3 class="sub-title">Need any help?</h3>
+                    <h2 class="section-title">Get in touch with us</h2>
                 </div>
-            </div>
-            <div class="about-img mt-3 pb-5">
-                <img src="assets/img/about/about_banner.png" alt="about">
-                <div class="about-banner-des mt-5">
-                    <h3 class="about-description-title">We are your all-in-one design solution for any digital products like apps, websites, and software. Here, at Design Monks, we think like real monks to bring out the ideation for the best possible design solution. No matter if you are a start-up or already raised up, we’ll help you with the most effective design idea that can be the best ever turning point for your business.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="lead-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-7 mb-4">
-                    <div class="secting-heading">
-                        <h2 class="section-title">Your Trusted Team of Design Leaders</h2>
+                <div class="row align-items-center pb-5">
+                    <div class="col-md-6 mb-4">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <div class="d-flex gap-2 align-items-baseline">
+                                    <i class="fas fa-home"></i>
+                                    <div>
+                                        <h6>Halpern House, 1-2 Hampshire Terrace, 
+                                          </h6>
+                                          <p>Portsmouth, PO1 2Q, UK</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <div class="d-flex gap-2 align-items-baseline">
+                                    <i class="fas fa-headphones"></i>
+                                    <div>
+                                        <h6><a href="tel:+44 (0) 238 052 8262">+44 (0) 238 052 8262</a></h6>
+                                        <p>Mon to Sat 9am to 6 pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info_item">
+                                <div class="d-flex gap-2 align-items-baseline">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h6><a href="mailto:hello@bytestore.xyz">hello@bytestore.xyz</a></h6>
+                                        <p>Send us your query anytime!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="mt-3">
+                    <div class="col-md-6 mb-4">
+                        <div class="contact-form">
+                            <form method="post" id="contact-form">
+                               <input type="hidden">                    
+                               <div class="row">
+                                  <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                     <input type="text" name="name" placeholder="Full Name" required="">
+                                  </div>
+                                  <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                     <input type="email" name="email" placeholder="Email Address" required="">
+                                  </div>
+                                  <div class="form-group col-lg-12">
+                                     <input type="text" name="subject" placeholder="Subject" required="">
+                                  </div>
+                                  <div class="form-group col-lg-12">
+                                     <textarea name="message" placeholder="Message" required=""></textarea>
+                                  </div>
+                                  <div class="form-group col-lg-12">
+                                     <button class="default-btn" type="submit" name="submit-form"><span class="btn-title">Send Message</span></button>
+                                  </div>
+                               </div>
+                            </form>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="marquee-wrapper">
+                <div class="secting-heading text-center mb-4">
+                    <h3 class="sub-title">Companies we worked with
+                    </h3>
+                </div>
+                <div class="marquee-wrapper-linear">
+                    <ul>
                         <li>
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none"><path d="M7.93859 8.01803C9.27815 6.78345 10.3135 5.2156 11.215 3.1635C12.0107 5.31251 13.0474 6.99663 14.4008 8.35638C15.6601 9.62168 17.1557 10.5671 18.8949 11.3514C16.7094 12.076 15.0657 12.925 13.7685 14.1363C12.5363 15.2869 11.6707 16.7145 10.9173 18.5237C10.2131 16.4621 9.42382 14.8606 8.24589 13.5835C7.06596 12.3042 5.55178 11.4074 3.51361 10.6388C5.2526 9.97094 6.70315 9.15665 7.93859 8.01803Z" stroke="#7755FF" stroke-width="2"></path></svg></span>
-                            We create effective design solutions that help businesses grow bigger in a better way.
+                            <img src="assets/img/Rakuten-Viber-1.svg" alt="">
                         </li>
                         <li>
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none"><path d="M7.93859 8.01803C9.27815 6.78345 10.3135 5.2156 11.215 3.1635C12.0107 5.31251 13.0474 6.99663 14.4008 8.35638C15.6601 9.62168 17.1557 10.5671 18.8949 11.3514C16.7094 12.076 15.0657 12.925 13.7685 14.1363C12.5363 15.2869 11.6707 16.7145 10.9173 18.5237C10.2131 16.4621 9.42382 14.8606 8.24589 13.5835C7.06596 12.3042 5.55178 11.4074 3.51361 10.6388C5.2526 9.97094 6.70315 9.15665 7.93859 8.01803Z" stroke="#7755FF" stroke-width="2"></path></svg></span>
-                            We prioritize being flexible, transparent, and supportive so that we can provide exactly what you need.
+                            <img src="assets/img/carnesia.svg" alt="">
                         </li>
                         <li>
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none"><path d="M7.93859 8.01803C9.27815 6.78345 10.3135 5.2156 11.215 3.1635C12.0107 5.31251 13.0474 6.99663 14.4008 8.35638C15.6601 9.62168 17.1557 10.5671 18.8949 11.3514C16.7094 12.076 15.0657 12.925 13.7685 14.1363C12.5363 15.2869 11.6707 16.7145 10.9173 18.5237C10.2131 16.4621 9.42382 14.8606 8.24589 13.5835C7.06596 12.3042 5.55178 11.4074 3.51361 10.6388C5.2526 9.97094 6.70315 9.15665 7.93859 8.01803Z" stroke="#7755FF" stroke-width="2"></path></svg></span>
-                            We create effective design solutions that help businesses grow bigger in a better way.
+                            <img src="assets/img/avijatrik.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/Onethread.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/tempo.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/khan-it-logo.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/klub.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/yenest.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/avijatrik.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/Onethread.svg" alt="">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="assets/img/Rakuten-Viber-1.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/carnesia.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/avijatrik.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/Onethread.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/tempo.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/khan-it-logo.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/klub.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/yenest.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/avijatrik.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/Onethread.svg" alt="">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="assets/img/Rakuten-Viber-1.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/carnesia.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/avijatrik.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/Onethread.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/tempo.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/khan-it-logo.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/klub.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/yenest.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/avijatrik.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/img/Onethread.svg" alt="">
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-5 mb-4">
-                    <div class="lead-img">
-                        <img src="assets/img/about/teamlead.png" alt="teamlead.png">
+               
+            </div>
+            <div class="contaimer">
+
+            </div>
+            <div class="col-md-12 pt-50">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5469548135934!2d90.42033850888446!3d23.763529878572413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7f5bfcb33df%3A0xb4edb1bd16f60b1f!2sTime%20research%20%26%20innovation%2C%20BD!5e0!3m2!1sen!2sbd!4v1719825628885!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          
+    </section>
+   
+       <!-- Testimonial Section Begin -->
+    <section class="testimonial" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="secting-heading text-center">
+                        <h3 class="sub-title">Testimonials</h3>
+                        <h2 class="section-title ">What your clients say</h2>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-   <section class="customer-says">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-7 pb-4">
-                <div class="secting-heading">
-                    <h3 class="sub-title yellow-c">What our customers say</h3>
-                    <h2 class="section-title text-white">You know you're
-                        in good hands</h2>
-                    <div class="customer-title">
-                        <p>I’ve had the pleasure of collaborating with Design Monks for a while now on my new project, and I must say, their communication is top-notch. They’re lightning-quick in addressing any questions or feedback I have, and they consistently go the extra mile to make sure I’m thrilled with the final outcome. I wholeheartedly endorse them!</p>
-                    </div>
-                </div>
-                <div class="customer-profile mt-4">
-                    <img src="assets/img/about/customer.png" alt="customer">
-                    <div class="info">
-                        <h6 class="text-white">Ted Nash </h6>
-                        <div class="profile-title">
-                            <p >Founder and CEO, Yenex</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial__carousel">
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <div class="video-btn mb-3">
+                                        <a href="https://www.youtube.com/watch?v=OVTVcl5XSfg" class="play-now lightbox-image">
+                                            <i class="fas fa-play"></i>
+                                         </a> 
+                                    </div>
+                                    <p>“1. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
                         </div>
-                        
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <div class="video-btn mb-3">
+                                        <a href="https://www.youtube.com/watch?v=OVTVcl5XSfg" class="play-now lightbox-image">
+                                            <i class="fas fa-play"></i>
+                                         </a> 
+                                    </div>
+                                    <p>“2. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“3. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-9 col-lg-10">
+                                    <p>“4. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>“5. Fast and accurate at solving mental math problems involving addition,
+                                        subtraction, multiplication, division and percentages but without high-level
+                                        skills that might be required in jobs requiring complex calculation and
+                                    analysis.”</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 pb-4">
-                <div class="customer-location">
-                    <img src="assets/img/about/world_map.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-   </section>
-   <section class="story-area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-9 col-lg-11 col-md-12 text-center">
-                <div class="secting-heading">
-                    <h3 class="sub-title">Our story</h3>
-                    <h2 class="section-title">How Colleagues Turn Into Co-Founders of Design Monks</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-md-6 mt-5">
-                <div class="story-img">
-                    <img src="assets/img/about/story.png" alt="story">
-                </div>
-            </div>
-            <div class="col-md-6 mt-5">
-                <div class="story-des">
-                    <p> <a href="javascript:void(0)"> Meet Atiq and Noman</a>, the brains behind Design Monks. Their journey started as colleagues. Their barrier as typical colleagues’ relationships broke when they found similarities in their design thinking, determination, and future goals. </p>
-                    <p>It was 2021 when they were working on the same project and once they finished it, Atiq popped the question to Noman, “How about we start our own thing?” They didn’t take longer to find Design Monks.</p>
-                    <p>It was 2021 when they were working on the same project and once they finished it, Atiq popped the question to Noman, “How about we start our own thing?” They didn’t take longer to find Design Monks.</p>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-   </section>
-   <section class="team-area">
-    <div class="container">
-        <div class="secting-heading">
-            <h3 class="sub-title yellow-c">Our awesome team</h3>
-            <h2 class="section-title text-white">We have a nice Family with Expert, Happy, and Cheerful People</h2>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-md-4 mb-5">
-                <div class="team-profile">
-                    <img src="assets/img/about/team1.png" alt="team1">
-                    <div class="team-info mt-4">
-                        <h5>Atiqur Rahaman</h5>
-                        <p>CEO & Co-founder</p>
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-7 col-sm-10 ">
+                    <div class="testimonial__client">
+                        <div class="testimonial__client__item add">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-1.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Dr. Shah Siddiqui</h5>
+                                <span>CEO, TRI</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-2.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-3.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-4.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__client__item">
+                            <div class="testimonial__client__pic">
+                                <img src="assets/img/ta-5.png" alt="">
+                            </div>
+                            <div class="testimonial__client__text">
+                                <h5>Renee Calhoun</h5>
+                                <span>CEO, Woolley</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="team-profile mar-m-20">
-                    <img src="assets/img/about/team2.png" alt="team1">
-                    <div class="team-info mt-4">
-                        <h5>Atiqur Rahaman</h5>
-                        <p>CEO & Co-founder</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-5">
-                <div class="team-profile">
-                    <img src="assets/img/about/team3.png" alt="team1">
-                    <div class="team-info mt-4">
-                        <h5>Atiqur Rahaman</h5>
-                        <p>CEO & Co-founder</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 mt-2">
-                <div class="team-pagination text-center">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                        </ul>
-                      </nav>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-   </section>
-    <section class="home-video-wrapper ">
-        <div class="container">
-            <div class="video-container">
-                <video id="video" width="100%" height="auto" poster="assets/img/videoframe_30887.png" controls>
-                  <source src="assets/img/Timerni.mp4" type="video/mp4" >
-                  Your browser does not support HTML5 video.
-                </video>
-                <div id="custom-play-button" class="play-button"></div>
-              </div>
-        </div>
-    </section>
-    <section class="join-team">
-        <div class="container">
-            <div class="secting-heading">
-                <h2 class="section-title">Want to Be a Part of Us?</h2>
-                <p>We are a growing company constantly looking for skilled and passionate people to work with. You can join us to be part of our happy Monk family. </p>
-                <div class="mt-3">
-                    <a class="default-btn" href="javascript:void(0)">Join Our Team</a>
                 </div>
             </div>
         </div>
@@ -438,7 +569,7 @@
     <div class="container">
         <div class="footer-top">
             <div class="row">
-                <div class="col-md-3 col-sm-12">
+                <div class="col-lg-3 col-md-5 col-sm-12">
                     <div class="footer-logo">
                         <a href="index.html">
                             <img src="assets/img/footer-logo.svg" alt="logo">
@@ -462,7 +593,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer-link">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
@@ -478,7 +609,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer-link">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
@@ -494,7 +625,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="footer-link">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
@@ -516,7 +647,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer-link">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
