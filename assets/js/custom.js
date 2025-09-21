@@ -74,6 +74,19 @@ $(document).ready(function($) {
           srcAction: 'iframe_src',
         }
       });
+    //   banner-carousel
+
+    $(".banner-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 10,
+        dots: true,
+        nav: false,
+        active: true,
+        smartSpeed: 1000,
+    });
+    
+
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: false,
