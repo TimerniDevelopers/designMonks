@@ -166,5 +166,75 @@ $(document).ready(function($) {
           ]
         
       });
+      const items = document.querySelectorAll(".timeline-item");
+      const progressBar = document.getElementById("progress");
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            const visibleCount = document.querySelectorAll(".timeline-item.active").length;
+            const percent = (visibleCount / items.length) * 100;
+            progressBar.style.height = percent + "%";
+          }
+        });
+      }, { threshold: 0.3 });
+    
+      items.forEach(item => observer.observe(item));
+      // Testimonial carousel
+      $(".case-win-slider").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        center: true,
+        dots: false,
+        loop: true,
+        nav: true,
+        margin:10,
+        navText: [
+          '<i class="fas fa-chevron-left"></i>',
+          '<i class="fas fa-chevron-right"></i>',
+        ],
+        responsive: {
+          0: { items: 1 },
+          576: { items: 1 },
+          768: { items: 1 },
+          992: { items: 1 },
+        },
+      });
+      // $(".book-slider").owlCarousel({
+      //   autoplay: true,
+      //   smartSpeed: 1000,
+      //   center: true,
+      //   dots: false,
+      //   loop: true,
+      //   nav: true,
+      //   margin:20,
+      //   navText: [
+      //     '<i class="fas fa-chevron-left"></i>',
+      //     '<i class="fas fa-chevron-right"></i>',
+      //   ],
+      //   responsive: {
+      //     0: { items: 1 },
+      //     576: { items: 1 },
+      //     768: { items: 2 },
+      //     992: { items: 2 },
+      //     1199: { items: 2},
+      //   },
+      // });
+      $(".book-slider").owlCarousel({
+        loop: false,
+        dots: true,
+        margin: 20,
+        nav: false,
+        smartSpeed: 500,
+        autoplay: false,
+        autoplayTimeout: 10000,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 1 },
+          1024: { items: 2 },
+        },
+      });
+    
 
 });

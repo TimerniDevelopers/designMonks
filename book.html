@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design-Monks</title>
+    <meta name="keywords" content="Portfolio" />
+    <meta name="description" content="Portfolio" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- swiper Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- Carousel Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+    <!-- magnific-popup -->
+     <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<style>
+
+/*** Testimonial ***/
+.testimonial-section {
+  background: #fafbfb;
+  padding: 50px 0px 40px 0px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.testimonial-item i {
+  color: var(--primary);
+}
+.testimonial-carousel .owl-item .testimonial-item {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
+  border: 1px solid transparent;
+  transform: scale(0.85);
+  transition: 0.5s;
+}
+.testimonial-item p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+  box-shadow: none;
+  border-color: var(--primary);
+  transform: scale(1);
+}
+
+.testimonial-carousel .owl-item .testimonial-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial-carousel .owl-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-nav button.owl-prev,
+.testimonial-carousel .owl-nav button.owl-next {
+  margin: 0 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 45px;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-nav button.owl-prev:hover,
+.testimonial-carousel .owl-nav button.owl-next:hover {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+</style>
+<!-- sidebar area start -->
+<div class="sidebar__area">
+    <div class="sidebar__wrapper">
+        <div class="sidebar__close">
+            <button class="sidebar__close-btn" id="sidebar__close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar__content">
+            <div class="sidebar__logo mb-20">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Design-Monks"></a>
+            </div>
+            <div class="mobile-menu fix"></div>
+            <div class="sidebar__contact mt-30 mb-20">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li class="d-flex align-items-center">
+                        <div class="sidebar__contact-icon mr-15 mb-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="sidebar__contact-text">
+                            <a target="_blank"
+                            href="javascript:void(0)">UK</a>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <div class="sidebar__contact-icon mr-15 mb-1">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="sidebar__contact-text">
+                            <a  href="javascript:void(0)">1234567670</a>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <div class="sidebar__contact-icon mr-15">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="sidebar__contact-text">
+                            <a  href="javascript:void(0)"><span
+                                    class="__cf_email__">tri@gmail.com</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sidebar area end -->
+<header class="header-transparent">
+    <div class="header-sticky">
+        <div class="container">
+            <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo.svg" alt="Design-Monks"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-8 col-6">
+                        <div class="nav-area">
+                            <div class="main-menu text-center">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="about.html">About</a>
+                                        </li>
+                                        <li><a href="portfolio.html"> Portfolio</a>
+                                        </li>
+                                        <li><a href="blog.html">Blog</a>
+                                        </li>
+                                        <li><a class="active" href="career.html">Career</a>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-btn d-md-none d-lg-block text-end">
+                                <a class="default-btn default-outline" href="contact.html">Hire Us</a>
+                            </div>
+                            <div class="side-menu-icon d-lg-none text-end">
+                                <a href="javascript:void(0)" class="info-toggle-btn text-end sidebar-toggle-btn"><i
+                                        class="fas fa-bars"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="testimonial-section mb-0">
+        <div class="container">
+            <div class="content-box mb-30">
+                <div class="sec-title text-center">
+                    <h2 class="title">Book A Calender </h2>
+                </div>
+
+            </div>
+            <div class=" testimonial-carousel owl-carousel ">
+                <div class="testimonial-item rounded p-4">
+                    <i class="fa fa-quote-left fa-2x  mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                        diam</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/testimonial/ta-1.png"
+                            loading="lazy">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="ps-3">
+                                    <h6 class="mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                                <div>
+                                    <a href="#" class="default-btn"><span>Lets Connect</span> <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <i class="fa fa-quote-left fa-2x  mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                        diam</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/testimonial/ta-2.png"
+                            loading="lazy">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="ps-3">
+                                    <h6 class="mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                                <div>
+                                    <a href="#" class="default-btn"><span>Lets Connect</span> <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <i class="fa fa-quote-left fa-2x  mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                        diam</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/testimonial/ta-3.png"
+                            loading="lazy">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="ps-3">
+                                    <h6 class="mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                                <div>
+                                    <a href="#" class="default-btn"><span>Lets Connect</span> <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded p-4">
+                    <i class="fa fa-quote-left fa-2x  mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                        diam</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/testimonial/ta-4.png"
+                            loading="lazy">
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="ps-3">
+                                    <h6 class="mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                                <div>
+                                    <a href="#" class="default-btn"><span>Lets Connect</span> <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <div class="booking-area pt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="book-slider owl-carousel">
+                        <div class="book-slider-item">
+                            <img src="assets/img/book_1.png" alt="book_1">
+                            <div class="book-profile-his mt-3">
+                                <h5>Dr. Sidduque</h5>
+                                <p>CEO, Time Resarch & innovation</p>
+                                <p class="mt-1 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, reiciendis.</p>
+                            </div>
+                            <a href="#" class="default-btn" ><span >Lets Connect</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="book-slider-item">
+                            <img src="assets/img/book_1.png" alt="book_1">
+                            <div class="book-profile-his mt-3">
+                                <h5>Dr. Sidduque</h5>
+                                <p>CEO</p>
+                                <p class="mt-1 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, reiciendis.</p>
+                            </div>
+                            <a href="#" class="default-btn" ><span >Lets Connect</span> <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer-area">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-sm-12">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="assets/img/footer-logo.svg" alt="logo">
+                        </a>
+                        <div class="footer-desctiption">
+                            <p>Beyond being a top UI UX design hub, we’re your one-stop for research, wireframing, design, and development!</p>
+                        </div>
+                    </div>
+                    <div class="social-icon mt-3">
+                        <a href="javascript:void(0)">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-link">
+                        <div class="footer-desctiption ">
+                            <h3 class="footer-title">
+                                Company
+                            </h3>
+                            <ul>
+                                <li><a href="javascript:void(0)"> About</a></li> 
+                                <li><a href="javascript:void(0)"> Works</a></li> 
+                                <li><a href="javascript:void(0)"> Blog</a></li> 
+                                <li><a href="javascript:void(0)"> Career</a></li> 
+                                <li><a href="javascript:void(0)"> Contact</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer-link">
+                        <div class="footer-desctiption ">
+                            <h3 class="footer-title">
+                                Services
+                            </h3>
+                            <ul>
+                                <li><a href="javascript:void(0)"> UI UX Design</a></li> 
+                                <li><a href="javascript:void(0)"> Web Design</a></li> 
+                                <li><a href="javascript:void(0)"> WordPress</a></li> 
+                                <li><a href="javascript:void(0)"> Branding</a></li> 
+                                <li><a href="javascript:void(0)"> UX Audit</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="footer-link">
+                        <div class="footer-desctiption ">
+                            <h3 class="footer-title">
+                                Contact Us
+                            </h3>
+                            <ul>
+                                <li><a href="mailto: hello@bytestore.xyz"><i class="fas fa-envelope"></i> hello@bytestore.xyz</a></li> 
+                                <li><a href="tel:+44 (0) 238 052 8262"> <i class="fab fa-whatsapp"></i> +44 (0) 238 052 8262</a></li> 
+                            </ul>
+                            <div class="footer-desctiption mt-4">
+                                <h3 class="footer-title">
+                                   Others
+                                </h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">Privacy Policy</a></li> 
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-link">
+                        <div class="footer-desctiption ">
+                            <h3 class="footer-title">
+                                Newsletter
+                            </h3>
+                            <div class="subscribe-form">
+                                <form method="post" action="">
+                                   <input type="hidden">                                            
+                                   <div class="form-group mb-3">
+                                      <input type="email" class="default-btn default-outline-2 w-100" name="email" value="" placeholder="Email Address" required="" autocomplete="off">
+                                   </div>
+                                   <div class="form-group">
+                                      <button type="submit" class="default-btn w-100"><span class="btn-title">Subscribe</span></button>
+                                   </div>
+                                </form>
+                             </div>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom  text-center mt-3">
+            <p >©2024 <a class="text-decoration-underline" href="https://timerni.com/">Timerni</a> All Rights Reserved</p>
+          
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap JS Link -->
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- carousel slider JS -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.slicknav.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/counterup.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script> 
+<script>
+    const items = document.querySelectorAll(".timeline-item");
+    const barFill = document.querySelector(".bar-fill");
+    const barIcon = document.getElementById("barIcon");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+  
+          // Get position of active item relative to bar
+          const itemRect = entry.target.getBoundingClientRect();
+          const barRect = barIcon.parentElement.getBoundingClientRect();
+          const offset = itemRect.top - barRect.top + itemRect.height / 2;
+  
+          barIcon.style.top = offset + "px";
+  
+          // Update bar progress
+          const activeItems = document.querySelectorAll(".timeline-item.active").length;
+          const totalItems = items.length;
+          const progress = (activeItems / totalItems) * 100;
+          barFill.style.height = progress + "%";
+        }
+      });
+    }, { threshold: 0.6 });
+  
+    items.forEach(item => observer.observe(item));
+  </script>
+  <script>
+      // Testimonial carousel
+      $(".testimonial-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      center: true,
+      dots: false,
+      loop: true,
+      nav: true,
+      navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>',
+      ],
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 },
+      },
+    });
+    
+  </script>
+</body>
+</html>

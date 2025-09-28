@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Process Timeline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f8f9fb;
+      color: #222;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 60px;
+    }
+
+    /* Layout */
+    .timeline-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    /* Progress bar */
+    .timeline-bar {
+      position: sticky;
+      top: 120px;
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bar {
+      position: relative;
+      width: 6px;
+      height: 100%;
+      background: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background: #7a5af8;
+      transition: height 0.3s ease;
+    }
+    .bar-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #7a5af8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .bar-icon img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+    }
+
+    /* Timeline items */
+    .timeline-items {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 25px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease;
+    }
+    .timeline-item.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .week-label {
+      display: inline-block;
+      background: #7a5af8;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .timeline-content {
+      flex: 1;
+    }
+    .timeline-content h3 {
+      margin: 8px 0;
+      font-size: 1.4rem;
+    }
+    .timeline-content p {
+      color: #444;
+      margin-bottom: 14px;
+    }
+
+    .tasks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .task-pill {
+      background: #f1f0ff;
+      color: #5a3de0;
+      padding: 6px 14px;
+      border-radius: 25px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .timeline-icon img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .timeline-container {
+        flex-direction: column;
+      }
+      .timeline-bar {
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .bar {
+        display: none;
+      }
+      .timeline-item {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<section>
+  <h2>We Make the <em>Complex</em> Simple in 30 Days</h2>
+  <p class="subtitle">No endless revisions, we simplify your design process and deliver your vision in just a month.</p>
+
+  <div class="timeline-container">
+    <!-- Progress bar -->
+    <div class="timeline-bar">
+      <div class="bar-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/709/709496.png" alt="icon">
+      </div>
+      <div class="bar">
+        <div class="bar-fill"></div>
+      </div>
+    </div>
+
+    <!-- Timeline items -->
+    <div class="timeline-items">
+      <div class="timeline-item" data-week="1">
+        <div class="timeline-content">
+          <span class="week-label">Week 1</span>
+          <h3>Research</h3>
+          <p>We immerse ourselves in your brief, company, and scope of work. Competitor and industry analysis, brand audit, and sitemap draft.</p>
+          <div class="tasks">
+            <span class="task-pill">Research</span>
+            <span class="task-pill">Competitor Analysis</span>
+            <span class="task-pill">Sitemap</span>
+          </div>
+        </div>
+        <div class="timeline-icon">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/68c3ac27416fd56159459da4_37.avif" alt="">
+        </div>
+      </div>
+
+      <div class="timeline-item" data-week="2">
+        <div class="timeline-content">
+          <span class="week-label">Week 2</span>
+          <h3>Ideation & Strategy</h3>
+          <p>We gather insights through interviews, research, and journey mapping, then brainstorm wireframes and define challenges.</p>
+          <div class="tasks">
+            <span class="task-pill">Interviews</span>
+            <span class="task-pill">Journey Mapping</span>
+            <span class="task-pill">Wireframes</span>
+          </div>
+        </div>
+        <div class="timeline-icon">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/68c3b0fa476fe64571c37cb2_37.avif" alt="">
+        </div>
+      </div>
+
+      <div class="timeline-item" data-week="3">
+        <div class="timeline-content">
+          <span class="week-label">Week 3</span>
+          <h3>Style Guide & UI</h3>
+          <p>We define typography, color palette, and design system. First UI draft is built.</p>
+          <div class="tasks">
+            <span class="task-pill">Typography</span>
+            <span class="task-pill">Color Palette</span>
+            <span class="task-pill">UI Design</span>
+          </div>
+        </div>
+        <div class="timeline-icon">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/68c3b114cb951bea25341151_37.avif" alt="">
+        </div>
+      </div>
+
+      <div class="timeline-item" data-week="4">
+        <div class="timeline-content">
+          <span class="week-label">Week 4</span>
+          <h3>Testing & Refinements</h3>
+          <p>Final user testing, QA, and refinements to deliver a polished product.</p>
+          <div class="tasks">
+            <span class="task-pill">User Testing</span>
+            <span class="task-pill">QA</span>
+            <span class="task-pill">Refinements</span>
+          </div>
+        </div>
+        <div class="timeline-icon">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/68c3b12271cbf2cb02ffa5a1_37.avif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll(".timeline-item");
+  const barFill = document.querySelector(".bar-fill");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+
+        // Calculate bar progress
+        const activeItems = document.querySelectorAll(".timeline-item.active").length;
+        const totalItems = items.length;
+        const progress = (activeItems / totalItems) * 100;
+        barFill.style.height = progress + "%";
+      }
+    });
+  }, { threshold: 0.4 });
+
+  items.forEach(item => observer.observe(item));
+</script>
+</body>
+</html>
