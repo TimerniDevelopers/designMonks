@@ -1193,9 +1193,6 @@ a{
   z-index: 2;
   margin-top: 7px;
   border-radius:10px;
-  opacity: 1;
-  visibility: visible;
-  top: 110%;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   -ms-border-radius:10px;
@@ -1286,6 +1283,7 @@ a{
    color: #737373;
     letter-spacing: .02em;
     font-size: 15px;
+    margin-top: 5px;
 }
 .header-sticky .logo {
     max-width: 140px;
