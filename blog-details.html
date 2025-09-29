@@ -407,41 +407,54 @@
     </section>
     <section class="discuss-area">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 mb-3">
                     <div class="profile-history">
                         <img src="assets/img/project-pro.png" alt="project">
                         <h3 class="sub-title mt-4 text-white">My name is Noman, Design Manager at Design Monks. I will answer all your questions.</h3>
                         <div class="profile-btn mt-auto">
                             <a class="default-btn" href="javascript:void(0)">
                                 <span class="me-2">  Ask Questions </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <g clip-path="url(#clip0_701_1169)">
-                                        <path d="M10.0025 0H9.9975C4.48375 0 0 4.485 0 10C0 12.1875 0.705 14.215 1.90375 15.8612L0.6575 19.5763L4.50125 18.3475C6.0825 19.395 7.96875 20 10.0025 20C15.5162 20 20 15.5138 20 10C20 4.48625 15.5162 0 10.0025 0Z" fill="#4CAF50"></path>
-                                        <path d="M15.8207 14.1212C15.5795 14.8025 14.622 15.3675 13.8582 15.5325C13.3357 15.6437 12.6532 15.7325 10.3557 14.78C7.41695 13.5625 5.52445 10.5762 5.37695 10.3825C5.2357 10.1887 4.18945 8.80123 4.18945 7.36623C4.18945 5.93123 4.9182 5.23248 5.21195 4.93248C5.4532 4.68623 5.85195 4.57373 6.23445 4.57373C6.3582 4.57373 6.46945 4.57998 6.56945 4.58498C6.8632 4.59748 7.0107 4.61498 7.20445 5.07873C7.4457 5.65998 8.0332 7.09498 8.1032 7.24248C8.17445 7.38998 8.2457 7.58998 8.1457 7.78373C8.05195 7.98373 7.96945 8.07248 7.82195 8.24248C7.67445 8.41248 7.53445 8.54248 7.38695 8.72498C7.25195 8.88373 7.09945 9.05373 7.26945 9.34748C7.43945 9.63498 8.02695 10.5937 8.89195 11.3637C10.0082 12.3575 10.9132 12.675 11.237 12.81C11.4782 12.91 11.7657 12.8862 11.942 12.6987C12.1657 12.4575 12.442 12.0575 12.7232 11.6637C12.9232 11.3812 13.1757 11.3462 13.4407 11.4462C13.7107 11.54 15.1395 12.2462 15.4332 12.3925C15.727 12.54 15.9207 12.61 15.992 12.7337C16.062 12.8575 16.062 13.4387 15.8207 14.1212Z" fill="#FAFAFA"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_701_1169">
-                                            <rect width="20" height="20" fill="white"></rect>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                <img src="assets/img/tedbot.png" alt="tedbot">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-8 mb-3">
-                    <div class="call-to-action">
-                        <img src="assets/img/call-to-action.svg" alt="action">
-                        <div class="call-to-action-details">
-                            <div class="secting-heading ">
-                                <h3 class="sub-title secondary-c">Got a project in mind? </h3>
-                                <h2 class="section-title text-white">Let's discuss the details</h2>
-                            </div>
-                            <div class="contact-btn mt-5">
-                                <a class="default-btn" href="javascript:void(0)">Contact Us</a>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-md-6 mb-3">
+                    <div class="call-to-action-form">
+                        <div class="contact-form">
+                            <form method="post" id="contact-form">                   
+                               <div class="row">
+                                  <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                     <input type="text" name="name" placeholder="Full Name" required="">
+                                  </div>
+                                  <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                     <input type="email" name="email" placeholder="Email Address" required="">
+                                  </div>
+                                  <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                    <input type="tel" name="Phone Number" placeholder="123324453254" required="">
+                                  </div>
+                                  <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                    <input type="text" name="LinkedIn" placeholder="LinkedIn" required="">
+                                 </div>
+                                  
+                                  <div class="form-group col-lg-12">
+                                    <p class="mb-2">Project Budget</p>
+                                    <div class="budget-btn">
+                                        <button class="default-btn default-outline" type="btn">Less then 5k</button>
+                                        <button class="default-btn default-outline" type="btn">Less then 5k</button>
+                                        <button class="default-btn default-outline" type="btn">Less then 5k</button>
+                                    </div>
+                                 </div>
+                                 <div class="form-group col-lg-12">
+                                     <textarea name="message" placeholder="Project Details" required=""></textarea>
+                                  </div>
+                                  <div class="form-group col-lg-12">
+                                     <button class="default-btn" type="submit" name="submit-form"><span class="btn-title">Lets Connect</span> <i  class="fas fa-arrow-right"></i></button>
+                                  </div>
+                               </div>
+                            </form>
+                         </div>
                     
                     </div>
                 </div>
@@ -454,47 +467,53 @@
     <div class="container">
         <div class="footer-top">
             <div class="row">
-                <div class="col-lg-3 col-md-5 col-sm-12">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img src="assets/img/footer-logo.svg" alt="logo">
-                        </a>
-                        <div class="footer-desctiption">
-                            <p>Beyond being a top UI UX design hub, we’re your one-stop for research, wireframing, design, and development!</p>
+                <div class="col-lg-5 col-md-6">
+                    <h3>Let Get Stared With Us. Call Us Now!</h3>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <div class="toll-free ">
+                        <div class="head-icon"> <i class="fas fa-headphones-alt"></i></div>
+                       <div class="toll-contact">
+                        <div>
+
+                            <small>Toll Free Call</small> 
                         </div>
-                    </div>
-                    <div class="social-icon mt-3">
-                        <a href="javascript:void(0)">
-                            <i class="fab fa-behance"></i>
-                        </a>
-                        <a href="javascript:void(0)">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="javascript:void(0)">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="javascript:void(0)">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                            <h3><a href="tel:+44 (0) 238 052 8262"> <i class="fab fa-whatsapp"></i> +44 (0) 238 052 8262</a></h3>
+                            
+                       </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer-link">
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-middle mt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-link pe-lg-5 pe-md-0">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
-                                Company
+                                Newsletter
                             </h3>
-                            <ul>
-                                <li><a href="javascript:void(0)"> About</a></li> 
-                                <li><a href="javascript:void(0)"> Works</a></li> 
-                                <li><a href="javascript:void(0)"> Blog</a></li> 
-                                <li><a href="javascript:void(0)"> Career</a></li> 
-                                <li><a href="javascript:void(0)"> Contact</a></li> 
-                            </ul>
+                          
+                            <div class="footer-desctiption">
+                                <p>Beyond being a top UI UX design hub, we’re your one-stop for research, wireframing, design, and development!</p>
+                            </div>
+                            <div class="footer-link mt-3">
+                              <a href="mailto: hello@bytestore.xyz"><i class="fas fa-envelope"></i> hello@bytestore.xyz</a>
+                            </div>
+                            <form class="subscribe-form">
+                                <input type="email"  class="form-input-two"  placeholder="Email Address...">
+                                 <button type="submit" class="sec-btn-two">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="footer-link">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
@@ -510,56 +529,84 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer-link">
                         <div class="footer-desctiption ">
                             <h3 class="footer-title">
-                                Contact Us
+                                Quick Links
                             </h3>
                             <ul>
-                                <li><a href="mailto: hello@bytestore.xyz"><i class="fas fa-envelope"></i> hello@bytestore.xyz</a></li> 
-                                <li><a href="tel:+44 (0) 238 052 8262"> <i class="fab fa-whatsapp"></i> +44 (0) 238 052 8262</a></li> 
+                                <li><a href="javascript:void(0)"> About</a></li> 
+                                <li><a href="javascript:void(0)"> Works</a></li> 
+                                <li><a href="javascript:void(0)"> Blog</a></li> 
+                                <li><a href="javascript:void(0)"> Career</a></li> 
+                                <li><a href="javascript:void(0)"> Contact</a></li> 
                             </ul>
-                            <div class="footer-desctiption mt-4">
-                                <h3 class="footer-title">
-                                   Others
-                                </h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">Privacy Policy</a></li> 
-                                </ul>
-                            </div>
-                           
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="footer-link">
-                        <div class="footer-desctiption ">
+                        <div class="footer-desctiption footer-address">
                             <h3 class="footer-title">
-                                Newsletter
+                               Our Office
                             </h3>
-                            <div class="subscribe-form">
-                                <form method="post" action="">
-                                   <input type="hidden">                                            
-                                   <div class="form-group mb-3">
-                                      <input type="email" class="default-btn default-outline-2 w-100" name="email" value="" placeholder="Email Address" required="" autocomplete="off">
-                                   </div>
-                                   <div class="form-group">
-                                      <button type="submit" class="default-btn w-100"><span class="btn-title">Subscribe</span></button>
-                                   </div>
-                                </form>
-                             </div>
-                            
+                            <ul>
+                                <li>Head Office</li> 
+                                <li><a href="#">Southampton, England </a></li>
+
+                            </ul>
+                            <div class="divider"><hr></div>
+                            <ul>
+                                <li>Sub Office</li> 
+                                <li><a href="#">Dhaka, Bangladesh</a></li> 
+                              
+                                
+                            </ul>
                            
                         </div>
                     </div>
                 </div>
+               
             </div>
         </div>
-        <div class="footer-bottom  text-center mt-3">
-            <p >©2024 <a class="text-decoration-underline" href="https://timerni.com/">Timerni</a> All Rights Reserved</p>
-          
+        
+    </div>
+    <div class="footer-bottom ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 my-2">
+                  <div class="footer-logo">
+                      <a href="index.html">
+                          <img src="assets/img/logo.jpg" alt="logo">
+                      </a>
+                  </div>
+                </div>
+                  <div class="col-md-6 text-lg-center text-md-center my-2">
+                      <p >©2025 <a class="text-decoration-underline" href="https://timerni.com/">Timerni</a> All Rights Reserved</p>
+                  </div>
+                  <div class="col-md-3 my-2">
+                      <div class="social-icon">
+                          <a href="javascript:void(0)">
+                              <i class="fab fa-behance"></i>
+                          </a>
+                          <a href="javascript:void(0)">
+                              <i class="fab fa-facebook"></i>
+                          </a>
+                          <a href="javascript:void(0)">
+                              <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="javascript:void(0)">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
         </div>
+       
+   
+      
     </div>
 </footer>
 

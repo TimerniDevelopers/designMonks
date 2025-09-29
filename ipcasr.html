@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design-Monks</title>
+    <meta name="keywords" content="Portfolio" />
+    <meta name="description" content="Portfolio" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- swiper Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- Carousel Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+    <!-- magnific-popup -->
+     <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<style>
+
+/*** Testimonial ***/
+.testimonial-section {
+  background: #fafbfb;
+  padding: 50px 0px 40px 0px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.testimonial-item i {
+  color: var(--primary);
+}
+.testimonial-carousel .owl-item .testimonial-item{
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
+  border: 1px solid transparent;
+  transform: scale(0.85);
+  transition: 0.5s;
+  display: block;
+}
+.testimonial-item p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+  box-shadow: none;
+  border-color: var(--primary);
+  transform: scale(1);
+}
+
+.testimonial-carousel .owl-item .testimonial-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial-carousel .owl-nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-nav button.owl-prev,
+.testimonial-carousel .owl-nav button.owl-next {
+  margin: 0 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 45px;
+  transition: 0.5s;
+}
+
+.testimonial-carousel .owl-nav button.owl-prev:hover,
+.testimonial-carousel .owl-nav button.owl-next:hover {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+</style>
+
+<main>
+
+    <div class="booking-area pt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class=" testimonial-carousel owl-carousel ">
+                        <a href="#" class="testimonial-item rounded p-4">
+                            <i class="fa fa-quote-left fa-2x  mb-3"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
+                                diam</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/testimonial/ta-1.png"
+                                    loading="lazy">
+                                    <div class="d-flex justify-content-between w-100">
+                                        <div class="ps-3">
+                                            <h6 class="mb-1">Client Name</h6>
+                                            <small>Profession</small>
+                                        </div>
+                                        <div>
+                                            <span class="default-btn"><span>Lets Connect</span> <i class="fas fa-arrow-right"></i></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap JS Link -->
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- carousel slider JS -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.slicknav.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/counterup.min.js"></script>
+<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script> 
+
+  <script>
+      // Testimonial carousel
+      $(".testimonial-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      center: true,
+      dots: false,
+      loop: true,
+      nav: true,
+      margin:20,
+      navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>',
+      ],
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 },
+      },
+    });
+    
+  </script>
+</body>
+</html>
