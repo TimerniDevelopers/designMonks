@@ -235,6 +235,6 @@ $(document).ready(function($) {
           1024: { items: 2 },
         },
       });
-    
+        
 
 });
