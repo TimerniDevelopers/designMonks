@@ -235,6 +235,36 @@ $(document).ready(function($) {
           1024: { items: 2 },
         },
       });
-        
+          $(".package-slider").owlCarousel({
+        autoplay: false,
+        smartSpeed: 1000,
+        items: 1,
+        dots: false,
+        loop: true,
+				nav: true,
+        navText: [
+            '<i class="fa fa-arrow-left-long"></i>',
+            '<i class="fa fa-arrow-right-long"></i>',
+        ],
+    });
+        $(".calender-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      center: true,
+      dots: false,
+      loop: true,
+      nav: true,
+      navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>',
+      ],
+      responsive: {
+        0: { items: 1 },
+        576: { items: 1 },
+        768: { items: 1 },
+        991: { items: 2 },
+        1199: { items: 3 },
+      },
+    });
 
 });
