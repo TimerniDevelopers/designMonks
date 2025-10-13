@@ -1940,6 +1940,7 @@ a{
     opacity: 1;
     visibility: visible; 
 }
+.discuss-area .item,
 .work-description .item {
     background: var(--primary);
     color: #fff;
@@ -1953,6 +1954,7 @@ a{
     display: inline-block;
     
 }
+.profile-history h4,
 .work-description-title{
     color: #fff;
     transition: all 0.3s ease-in-out;
@@ -1963,6 +1965,7 @@ a{
     overflow: hidden;
     margin: 10px 0px;
 }
+
 .work-description-title:hover{
     color: var(--secondary);
 }
@@ -2572,6 +2575,7 @@ a{
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+     min-height: 405px;
 }
 .call-to-action-form .default-btn:hover{
     border: 1px solid #fff;
@@ -2592,7 +2596,7 @@ a{
     padding-bottom: 30px;
     background: var(--secondary);
     border-radius: 25px;
-    min-height: 390px;
+    min-height: 405px;
     display: flex;
     flex-direction: column;
 }
@@ -2605,35 +2609,28 @@ a{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-/* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1299px) {
-   
-
+.profile-history ul li{
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: "ClashDisplay-Medium";
+      color: #fff;
+}
+.profile-his-two-img img{
+    max-width: 240px;
+}
+.book-a-call a {
+  color: var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+}
+.book-a-call a span{
+     
+     color: #fff;
+}
+ .discuss-area .contact-form .form-group textarea.h-90{
+    min-height: 90px;
 }
 
-/* small mobile  */
-@media (max-width: 991px) {
-    .call-to-action img {
-        display: none;
-    }
-    .call-to-action,
-    .profile-history {
-        min-height: 292px;
-    }
-    .profile-history .sub-title{
-        font-size: 15px;
-    }
-    .profile-btn .default-btn {
-        padding: 14px 15px;
-        font-size: 14px;
-    }
- 
-}
-/* small mobile  */ 
-@media (max-width: 767px) {
-  
- 
-}
 
 
 .footer-area{
@@ -3996,7 +3993,7 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 .package-item .package-icon {
     padding: 5px;
-    width: 90px;
+    width: 50px;
     height: 50px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -4004,9 +4001,12 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border: 1px solid var(--secondary);
-    display: flex
-;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+.package-item .package-icon img{
+    width: 30px;
 }
 .packger-wrapper .nav-pills .nav-link{
     position: relative;
@@ -4547,3 +4547,91 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     }
 }
 
+/* small mobile  */
+@media (max-width: 991px) {
+    .call-to-action img {
+        display: none;
+    }
+    .call-to-action,
+    .profile-history {
+        min-height: 292px;
+    }
+    .profile-history .sub-title{
+        font-size: 15px;
+    }
+    .profile-btn .default-btn {
+        padding: 14px 15px;
+        font-size: 14px;
+    }
+    .menu-grid {
+        display: block;
+    }
+    .team-area .mar-m-20 {
+        margin-top: 0px;
+    }
+    .team-area {
+        padding: 70px 0px;
+    }
+    .budget-btn button{
+        margin-bottom: 10px;
+    }
+    .team-profile .team-info h5 {
+        font-size: 20px;
+    }
+    .work-details{
+        margin-bottom: 20px;
+    }
+    .work-description{
+        margin-top: 10px;
+    }
+    .work-description.mt_80 {
+        margin-top: 0px;
+    }
+    .work-wrapper .row {
+        margin-bottom: 20px;
+    }
+    .footer-top h3 {
+        font-size: 17px;
+    }
+    .profile-history h4, .work-description-title {
+     
+        font-size: 25px;
+    }
+ 
+}
+/* small mobile  */ 
+@media (max-width: 767px) {
+  .packger-wrapper .nav-pills .nav-link{
+    margin-bottom: 10px;
+    min-width: 90px;
+        margin-right: 10px;
+  }
+  .package-des {
+    padding: 15px;
+}
+.testimonial {
+    padding-top: 70px;
+}
+ .single-testimonal {
+    flex-direction: column;
+    }
+    .single-testimonal-img img{
+        max-width: 150px;
+        margin-top: 20px;
+    }
+    .single-testimonal-wrapper {
+        padding: 20px;
+    }
+}
+@media (max-width: 575px) {
+  .sidebar__area {
+    width: 400px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .package-item {
+        flex-direction: column;
+    }
+ 
+}

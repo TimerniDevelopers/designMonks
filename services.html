@@ -1452,22 +1452,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   $(document).ready(function(){
-  // Initialize Owl Carousel for tabs
-//   $('.portfolio-slider').owlCarousel({
-//     loop: false,
-//     margin: 10,
-//     nav: true,
-//     navText: [
-//             '<i class="fas fa-chevron-left"></i>',
-//             '<i class="fas fa-chevron-right"></i>',
-//         ],
-//     dots: false,
-//     responsive: {
-//       0: { items: 1 },
-//       600: { items: 4},
-//       1000: { items: 5}
-//     }
-//   });
 
   var $portfolioSlider = $(".portfolio-slider");
     $portfolioSlider.owlCarousel({
@@ -1482,6 +1466,9 @@ document.addEventListener('DOMContentLoaded', function() {
         margin: 30,
         responsive: {
             0: {
+                items: 1,
+            },
+            575: {
                 items: 2,
             },
             768: {
