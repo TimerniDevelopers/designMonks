@@ -4392,6 +4392,9 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 .calender-item i {
   color: var(--primary);
 }
+.calender-item .default-btn:hover i {
+    color: var(--white);
+}
 .calender-carousel .owl-item .calender-item {
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
@@ -4440,11 +4443,16 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
   color: #ffffff;
   background: var(--primary);
 }
-
+@media (min-width: 320px) and (max-width: 991px) {
+    .calender-carousel .default-btn {
+        padding: 14px 17px;
+        font-size: 15px;
+    }
+}
 /* default.tiitle */
 @media (min-width: 320px) and (max-width: 991px) {
     .default-btn {
-        padding: 14px 30px;
+        padding: 14px 20px;
         font-size: 15px;
     }
     .section-title {
