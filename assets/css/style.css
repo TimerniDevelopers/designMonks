@@ -4392,9 +4392,16 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 .calender-item i {
   color: var(--primary);
 }
+.calender-item h6 {
+    font-family: "ClashDisplay-Medium";
+}
+.calender-item .default-btn {
+    max-width: 170px;
+}
 .calender-item .default-btn:hover i {
     color: var(--white);
 }
+
 .calender-carousel .owl-item .calender-item {
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
