@@ -4590,6 +4590,10 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
      
         font-size: 25px;
     }
+    .footer-link .footer-title {
+        font-size: 18px;
+        line-height: 23px;
+    }
  
 }
 /* small mobile  */ 
