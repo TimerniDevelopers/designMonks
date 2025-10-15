@@ -1563,10 +1563,63 @@ a{
     background-size: cover;
     background-color: #F5F1EE;
     overflow: hidden;
-    position: relative;
     z-index: 2;
     background-image: url(../img/bannerbg.png);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* color: #fff;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem; */
+    z-index: 11;
 }
+.ratting-top{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+.ratting-content{
+    margin-top: 10px;
+}
+.ratting-content img{
+    max-width: 70px;
+    display: inline-block !important;
+    text-align: center;
+}
+.ratting-content .ratting-icon{
+    margin-top: 6px;
+}
+.ratting-content .ratting-icon i{
+    color: var(--primary);
+    font-size: 13px;
+}
+.ratting-content{
+    text-align: center;
+}
+/* .banner-area .container{
+    position: relative;
+    z-index: 11;
+}
+.banner-area p{
+    color: #fff;
+   
+}
+.banner-area:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#30ff9700 30%, #30ff9754);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    z-index: 1;
+
+} */
+
 /* .home-banner{
     padding-bottom: 460px;
 } */
@@ -4637,5 +4690,22 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
         padding-top: 50px;
         padding-bottom: 40px;
     }
+    .calender-item h6 {
+        font-size: 15px;
+    }
+    .calender-carousel .default-btn {
+        padding: 10px 13px;
+        font-size: 13px;
+    }
  
+}
+@media (max-width: 400px) {
+ .sm-flex-col{
+    flex-direction: column;
+    gap:8px;
+ }
+     .calender-carousel .ps-2 {
+        padding-left: 0rem !important;
+    
+    }
 }
