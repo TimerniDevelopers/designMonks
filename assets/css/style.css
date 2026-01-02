@@ -4503,10 +4503,17 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
   color: #ffffff;
   background: var(--primary);
 }
+
+.hire-xl-none{
+    display: none !important;
+}
 @media (min-width: 320px) and (max-width: 991px) {
     .calender-carousel .default-btn {
         padding: 14px 17px;
         font-size: 15px;
+    }
+    .hire-xl-none{
+        display: block !important;
     }
 }
 /* default.tiitle */

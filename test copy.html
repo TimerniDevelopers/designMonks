@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Industry Wins Section</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+  body { background:#f5f5f5; }
+
+  section { padding: 40px; }
+
+  /* Sticky Section */
+  .sticky-section {
+    position: sticky;
+    top: 20px; /* adjust as needed */
+    background:#f5f5f5;
+    padding:40px 0;
+    z-index: 10;
+  }
+
+  .section-title { text-align:center; margin-bottom:40px; }
+  .section-title h2 { font-size:2.5rem; }
+  .section-title span { color:#ff4c60; }
+
+  /* Horizontal Scroll Wrapper */
+  .cards-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    position: relative;
+  }
+
+  .cards-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  .cards-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius:4px;
+  }
+
+  /* Card Styles */
+  .card {
+    flex: 0 0 300px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    display:flex;
+    flex-direction:column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+
+  /* Glow effect */
+  .card::before {
+    content:"";
+    position:absolute;
+    top:-10px; left:-10px; right:-10px; bottom:-10px;
+    background: linear-gradient(135deg, #ff4c60, #ffb347);
+    border-radius:20px;
+    opacity:0;
+    transition: opacity 0.3s ease;
+    z-index:0;
+    filter: blur(20px);
+  }
+
+  .card:hover::before { opacity:1; }
+  .card:hover { transform: translateY(-10px); box-shadow:0 15px 35px rgba(0,0,0,0.2); }
+
+  .card-image img { width:100%; height:180px; object-fit:cover; border-top-left-radius:15px; border-top-right-radius:15px; z-index:1; position:relative; }
+
+  .card-content { padding:15px; z-index:1; position: relative; flex-grow:1; }
+
+  .card-tag { font-size:0.85rem; font-weight:bold; color:#ff4c60; margin-bottom:5px; text-transform:uppercase; }
+  .card-title { font-size:1.2rem; margin-bottom:8px; }
+  .card-text { font-size:0.9rem; color:#555; margin-bottom:15px; }
+
+  .card-stats { display:flex; justify-content:space-between; margin-bottom:15px; }
+  .stat { text-align:center; }
+  .stat p { font-size:0.75rem; color:#999; }
+  .stat span { font-size:1rem; font-weight:bold; display:block; }
+
+  .card-author { display:flex; justify-content:space-between; align-items:center; }
+  .author-info { display:flex; align-items:center; }
+  .author-info img { width:35px; height:35px; border-radius:50%; margin-right:8px; }
+  .author-info div { font-size:0.8rem; }
+
+  .view-project { font-size:0.85rem; color:#ff4c60; display:flex; align-items:center; gap:4px; cursor:pointer; }
+
+  @media (max-width:768px){ .card { flex:0 0 250px; } }
+</style>
+</head>
+<body>
+
+<section style="height:800px; background:#ddd;">
+  <h1 style="text-align:center; padding-top:50px;">Scroll Down to Sticky Section</h1>
+</section>
+
+<section class="sticky-section">
+  <div class="section-title">
+    <h2>Proven Success in <span>Every Industry</span></h2>
+  </div>
+
+  <div class="cards-wrapper" id="cardsWrapper">
+    <!-- Card 1 -->
+    <a href="#" class="card">
+      <div class="card-image">
+        <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7758594e31e0312a925f_e0482580c600f74a17f23e4f9a90e82e_1.avif" alt="Travel">
+      </div>
+      <div class="card-content">
+        <div class="card-tag">Travel</div>
+        <div class="card-title">Easy Booking for Dream Trips</div>
+        <div class="card-text">Triply is a hassle-free & effective tour solution.</div>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="#" class="card">
+      <div class="card-image">
+        <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7759bb3dd367d1496be0_7bc437d91a35f0cfd064cdc379817e74_2.avif" alt="Restaurant">
+      </div>
+      <div class="card-content">
+        <div class="card-tag">Restaurant</div>
+        <div class="card-title">Transform Your Dining</div>
+        <div class="card-text">At Plate, we offer premium dining experiences.</div>
+      </div>
+    </a>
+
+    <!-- Duplicate cards for seamless scroll -->
+    <a href="#" class="card">
+      <div class="card-image">
+        <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7758594e31e0312a925f_e0482580c600f74a17f23e4f9a90e82e_1.avif" alt="Travel">
+      </div>
+      <div class="card-content">
+        <div class="card-tag">Travel</div>
+        <div class="card-title">Easy Booking for Dream Trips</div>
+        <div class="card-text">Triply is a hassle-free & effective tour solution.</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section style="height:1000px; background:#eee;">
+  <h1 style="text-align:center; padding-top:50px;">Other Page Content</h1>
+</section>
+
+<script>
+  // Auto-scroll script
+  const wrapper = document.getElementById('cardsWrapper');
+  let scrollAmount = 0;
+  let speed = 0.5; // scroll speed
+
+  function autoScroll() {
+    scrollAmount += speed;
+    if(scrollAmount >= wrapper.scrollWidth / 2) scrollAmount = 0;
+    wrapper.scrollLeft = scrollAmount;
+    requestAnimationFrame(autoScroll);
+  }
+  autoScroll();
+
+  wrapper.addEventListener('mouseenter', () => speed = 0);
+  wrapper.addEventListener('mouseleave', () => speed = 0.5);
+</script>
+
+</body>
+</html>

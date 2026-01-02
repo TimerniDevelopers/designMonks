@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What We Do - DesignMonks Replica</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter', sans-serif; background:#0a0a0a; color:#fff; }
+
+  section { padding:100px 20px; max-width:1200px; margin:auto; }
+  .section-tag { color:#ff6b6b; font-weight:600; margin-bottom:10px; text-transform:uppercase; letter-spacing:1px; display:block; }
+  h2 { font-size:2.5rem; line-height:1.2; margin-bottom:60px; }
+
+  .flex-row { display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px; }
+  .services-content-left, .services-content-right { flex:1; min-width:300px; }
+
+  /* Left Cards */
+  .card-wrapper { position:relative; margin-bottom:40px; }
+  .card-wrapper::before {
+    content:"";
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    border-radius:12px;
+    /* background: linear-gradient(135deg, #ff6b6b, #ff8787, #ffb3b3); */
+    filter: blur(30px); opacity:0.4; z-index:0;
+  }
+  .card { background:#111; border-radius:12px; padding:30px; position:relative; z-index:1; opacity:0; transform:translateY(50px); transition:all 0.3s ease; }
+  .card h3 { font-size:1.5rem; margin-bottom:10px; font-weight:700; }
+  .card p { line-height:1.6; color:#ddd; margin-bottom:20px; }
+  .card a { color:#ff6b6b; font-weight:600; text-decoration:none; transition:all 0.3s ease; }
+  .card a:hover { color:#ff8787; }
+
+  /* Right Images */
+  .img-wrapper { position:relative; cursor:pointer; margin-bottom:40px; }
+  .img-wrapper::before {
+    content:"";
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    border-radius:12px;
+    /* background: linear-gradient(135deg, #ff6b6b, #ff8787, #ffb3b3); */
+    filter: blur(30px); opacity:0.3; z-index:0;
+  }
+  .img-box { overflow:hidden; border-radius:12px; position:relative; z-index:1; perspective:1000px; }
+  .img-box img { width:100%; height:100%; object-fit:cover; display:block; transition: transform 0.5s ease; }
+
+  @media (max-width:900px) { .flex-row { flex-direction:column; } }
+</style>
+</head>
+<body>
+
+<section>
+  <span class="section-tag">What We Do</span>
+  <h2>We Design <span style="color:#ff6b6b;">Brands</span> That <span style="color:#ff6b6b;">Speak</span> to Audiences</h2>
+
+  <!-- UI/UX Design -->
+  <div class="flex-row">
+    <div class="services-content-left">
+      <div class="card-wrapper">
+        <div class="card">
+          <h3>UI/UX <span style="color:#ff6b6b;">Design</span></h3>
+          <p>UI/UX Design, App Design, Website Design, Dashboard Design, Wireframing & Prototyping, Interaction Design, and Product Design.</p>
+          <a href="/services/ui-ux">See More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="services-content-right">
+      <div class="img-wrapper">
+        <div class="img-box">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/679a9c4888217669122eebaf_3d41798d228903d42862a148dd56aeb1_Project%20Cards%20%2810%29%20%281%29.avif" alt="UI/UX Project">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Development -->
+  <div class="flex-row">
+    <div class="services-content-left">
+      <div class="card-wrapper">
+        <div class="card">
+          <h3>Web <span style="color:#ff6b6b;">Development</span></h3>
+          <p>Frontend Development, Backend Development, Full Stack Solutions, Mobile App Development, Custom Web Applications, API Integration.</p>
+          <a href="/services/web-design">See More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="services-content-right">
+      <div class="img-wrapper">
+        <div class="img-box">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac78087a5b72120cc3e5db_d1a5f14e5e5fc69f2dbac575600f06f4_Project%20Cards-6.avif" alt="Web Development Project">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo & Branding -->
+  <div class="flex-row">
+    <div class="services-content-left">
+      <div class="card-wrapper">
+        <div class="card">
+          <h3>Logo & <span style="color:#ff6b6b;">Branding</span></h3>
+          <p>Logo Design, Full Branding, Business Branding, 3D logo, Custom Logo, Visual Identity, Brand Strategy, Social Media Branding, and Brand Guidelines.</p>
+          <a href="/services/logo-branding">See More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="services-content-right">
+      <div class="img-wrapper">
+        <div class="img-box">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7809638da68108df9847_Project%20Cards-4.avif" alt="Logo Branding Project">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Webflow & Framer -->
+  <div class="flex-row">
+    <div class="services-content-left">
+      <div class="card-wrapper">
+        <div class="card">
+          <h3>Webflow & <span style="color:#ff6b6b;">Framer</span></h3>
+          <p>Custom Webflow Websites, Webflow Plugin, Framer Prototypes, Framer Material, Framer App, CMS Integration, Rapid Development.</p>
+          <a href="/services/framer-design">See More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="services-content-right">
+      <div class="img-wrapper">
+        <div class="img-box">
+          <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac78089a0d6cfed1675211_Project%20Cards-5.avif" alt="Webflow Framer Project">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+// Animate all cards
+gsap.utils.toArray('.card').forEach(card=>{
+  gsap.fromTo(card,
+    { opacity:0, y:50, rotateY:5 },
+    { opacity:1, y:0, rotateY:0, duration:1,
+      scrollTrigger:{ trigger:card, start:'top 80%', end:'top 50%', toggleActions:'play none none reverse' }
+    }
+  );
+
+  card.addEventListener('mousemove', e=>{
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left)/rect.width - 0.5) * 10;
+    const y = ((e.clientY - rect.top)/rect.height - 0.5) * 10;
+    gsap.to(card, { rotateY:x, rotateX:-y, duration:0.3 });
+  });
+  card.addEventListener('mouseleave', ()=> gsap.to(card, { rotateY:0, rotateX:0, duration:0.5 }));
+});
+
+// Animate all images
+gsap.utils.toArray('.img-box img').forEach(img=>{
+  gsap.to(img, { y:-50, ease:'none', scrollTrigger:{ trigger:img, start:'top bottom', end:'bottom top', scrub:true } });
+  img.parentElement.addEventListener('mouseenter', ()=> gsap.to(img, { scale:1.05, rotateX:5, rotateY:5, duration:0.5 }));
+  img.parentElement.addEventListener('mouseleave', ()=> gsap.to(img, { scale:1, rotateX:0, rotateY:0, duration:0.5 }));
+});
+</script>
+
+</body>
+</html>
