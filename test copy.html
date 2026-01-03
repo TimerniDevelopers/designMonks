@@ -1,171 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sticky Industry Wins Section</title>
+<section class="company-profile" style="padding: 100px 0; background: #fff;">
+  <div class="container">
+    <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+        <h2 class="dm-service-title">We Design <span>Brands</span> That Speak to Audiences</h2>
+        <div class="dm-line" style="width:60px; height:4px; background:#FF6B6B; margin:20px 0;"></div>
+        <p class="dm-service-text">
+          Our team crafts visual identities that resonate with your target audience. From strategy to execution, we ensure your brand communicates value and builds trust.
+        </p>
+        <a href="#" class="default-btn">See Our Work →</a>
+      </div>
+
+      <!-- RIGHT IMAGES -->
+      <div class="col-lg-6 position-relative mb-5 mb-lg-0">
+        <div class="company-profile-img" style="position:relative; height:400px;">
+          <div class="dm-image-card top-img">
+            <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac78084947770a14f1eb7c_d1cec41f22346c1c941376236623384b_Project%20Cards.avif" class="img-fluid" alt="">
+          </div>
+          <div class="dm-image-card bottom-img">
+            <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac78084947770a14f1eb7c_d1cec41f22346c1c941376236623384b_Project%20Cards.avif" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <style>
-  * { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
-  body { background:#f5f5f5; }
+.dm-service-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #222;
+}
+.dm-service-title span { color: #FF6B6B; }
 
-  section { padding: 40px; }
+.dm-service-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
 
-  /* Sticky Section */
-  .sticky-section {
-    position: sticky;
-    top: 20px; /* adjust as needed */
-    background:#f5f5f5;
-    padding:40px 0;
-    z-index: 10;
-  }
+.default-btn {
+  display: inline-block;
+  background-color: #FF6B6B;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.default-btn:hover { background-color: #FF4757; }
 
-  .section-title { text-align:center; margin-bottom:40px; }
-  .section-title h2 { font-size:2.5rem; }
-  .section-title span { color:#ff4c60; }
+/* Image cards layering */
+.dm-image-card {
+  position: absolute;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  width: calc(100% - 40px);
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  /* Horizontal Scroll Wrapper */
-  .cards-wrapper {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 20px;
-    scrollbar-width: thin;
-    scrollbar-color: #ccc transparent;
+/* Hover interaction for UI/UX feel */
+.dm-image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.2);
+}
+
+/* Top image */
+.top-img { top:0; left:20px; z-index:2; }
+/* Bottom image */
+.bottom-img { top:30px; left:60px; z-index:1; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .company-profile-img { height: 350px; display:flex; justify-content:center; align-items:center; }
+  .dm-image-card {
     position: relative;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 20px;
+    max-width: 80%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   }
-
-  .cards-wrapper::-webkit-scrollbar {
-    height: 8px;
-  }
-  .cards-wrapper::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius:4px;
-  }
-
-  /* Card Styles */
-  .card {
-    flex: 0 0 300px;
-    background:#fff;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
-    scroll-snap-align: start;
-    display:flex;
-    flex-direction:column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-
-  /* Glow effect */
-  .card::before {
-    content:"";
-    position:absolute;
-    top:-10px; left:-10px; right:-10px; bottom:-10px;
-    background: linear-gradient(135deg, #ff4c60, #ffb347);
-    border-radius:20px;
-    opacity:0;
-    transition: opacity 0.3s ease;
-    z-index:0;
-    filter: blur(20px);
-  }
-
-  .card:hover::before { opacity:1; }
-  .card:hover { transform: translateY(-10px); box-shadow:0 15px 35px rgba(0,0,0,0.2); }
-
-  .card-image img { width:100%; height:180px; object-fit:cover; border-top-left-radius:15px; border-top-right-radius:15px; z-index:1; position:relative; }
-
-  .card-content { padding:15px; z-index:1; position: relative; flex-grow:1; }
-
-  .card-tag { font-size:0.85rem; font-weight:bold; color:#ff4c60; margin-bottom:5px; text-transform:uppercase; }
-  .card-title { font-size:1.2rem; margin-bottom:8px; }
-  .card-text { font-size:0.9rem; color:#555; margin-bottom:15px; }
-
-  .card-stats { display:flex; justify-content:space-between; margin-bottom:15px; }
-  .stat { text-align:center; }
-  .stat p { font-size:0.75rem; color:#999; }
-  .stat span { font-size:1rem; font-weight:bold; display:block; }
-
-  .card-author { display:flex; justify-content:space-between; align-items:center; }
-  .author-info { display:flex; align-items:center; }
-  .author-info img { width:35px; height:35px; border-radius:50%; margin-right:8px; }
-  .author-info div { font-size:0.8rem; }
-
-  .view-project { font-size:0.85rem; color:#ff4c60; display:flex; align-items:center; gap:4px; cursor:pointer; }
-
-  @media (max-width:768px){ .card { flex:0 0 250px; } }
+}
+@media (max-width: 576px) {
+  .dm-service-title { font-size: 2rem; }
+  .dm-service-text { font-size: 1rem; }
+  .default-btn { margin-top: 15px; }
+}
 </style>
-</head>
-<body>
 
-<section style="height:800px; background:#ddd;">
-  <h1 style="text-align:center; padding-top:50px;">Scroll Down to Sticky Section</h1>
-</section>
-
-<section class="sticky-section">
-  <div class="section-title">
-    <h2>Proven Success in <span>Every Industry</span></h2>
-  </div>
-
-  <div class="cards-wrapper" id="cardsWrapper">
-    <!-- Card 1 -->
-    <a href="#" class="card">
-      <div class="card-image">
-        <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7758594e31e0312a925f_e0482580c600f74a17f23e4f9a90e82e_1.avif" alt="Travel">
-      </div>
-      <div class="card-content">
-        <div class="card-tag">Travel</div>
-        <div class="card-title">Easy Booking for Dream Trips</div>
-        <div class="card-text">Triply is a hassle-free & effective tour solution.</div>
-      </div>
-    </a>
-
-    <!-- Card 2 -->
-    <a href="#" class="card">
-      <div class="card-image">
-        <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7759bb3dd367d1496be0_7bc437d91a35f0cfd064cdc379817e74_2.avif" alt="Restaurant">
-      </div>
-      <div class="card-content">
-        <div class="card-tag">Restaurant</div>
-        <div class="card-title">Transform Your Dining</div>
-        <div class="card-text">At Plate, we offer premium dining experiences.</div>
-      </div>
-    </a>
-
-    <!-- Duplicate cards for seamless scroll -->
-    <a href="#" class="card">
-      <div class="card-image">
-        <img src="https://cdn.prod.website-files.com/672a72b52eb5f37692d645a9/67ac7758594e31e0312a925f_e0482580c600f74a17f23e4f9a90e82e_1.avif" alt="Travel">
-      </div>
-      <div class="card-content">
-        <div class="card-tag">Travel</div>
-        <div class="card-title">Easy Booking for Dream Trips</div>
-        <div class="card-text">Triply is a hassle-free & effective tour solution.</div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section style="height:1000px; background:#eee;">
-  <h1 style="text-align:center; padding-top:50px;">Other Page Content</h1>
-</section>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-  // Auto-scroll script
-  const wrapper = document.getElementById('cardsWrapper');
-  let scrollAmount = 0;
-  let speed = 0.5; // scroll speed
+gsap.registerPlugin(ScrollTrigger);
 
-  function autoScroll() {
-    scrollAmount += speed;
-    if(scrollAmount >= wrapper.scrollWidth / 2) scrollAmount = 0;
-    wrapper.scrollLeft = scrollAmount;
-    requestAnimationFrame(autoScroll);
-  }
-  autoScroll();
+// Animate text + button
+gsap.from(".dm-service-title, .dm-service-text, .default-btn", {
+  scrollTrigger: {
+    trigger: ".company-profile",
+    start: "top 80%",
+  },
+  y: 50,
+  autoAlpha: 0,
+  duration: 0.8,
+  stagger: 0.2,
+  ease: "power2.out"
+});
 
-  wrapper.addEventListener('mouseenter', () => speed = 0);
-  wrapper.addEventListener('mouseleave', () => speed = 0.5);
+// Animate images
+gsap.from(".dm-image-card", {
+  scrollTrigger: {
+    trigger: ".company-profile-img",
+    start: "top 80%",
+  },
+  y: 50,
+  autoAlpha: 0,
+  duration: 0.8,
+  stagger: 0.2,
+  ease: "power2.out"
+});
 </script>
-
-</body>
-</html>
