@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DesignMonks-Style Video Section</title>
+
+<!-- Fancybox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+.video-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+/* Diagonal gradient overlay behind text */
+.video-section::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, #ff6b6b, #f06595, #845ef7);
+  opacity: 0.15;
+  transform: rotate(-15deg);
+  z-index: 0;
+}
+
+/* Content wrapper to sit above overlay */
+.video-content {
+  position: relative;
+  z-index: 1;
+}
+
+.video-section h2,
+.video-section p,
+.video-thumbnail {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.video-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.video-section p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 650px;
+  margin-bottom: 60px;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 0, 0, 0.85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+.play-button::before {
+  content: '';
+  display: block;
+  margin-left: 5px;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent white;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* Parallax effect for thumbnail */
+.video-thumbnail {
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .video-section h2 { font-size: 2rem; }
+  .video-section p { font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<section class="video-section">
+  <div class="video-content">
+    <h2>Because Your Growth Is Our Mission</h2>
+    <p>See the difference thoughtful design makes. Our works highlight the dedication we bring to every client partnership.</p>
+
+    <a data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video-thumbnail">
+      <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Play Video">
+      <div class="play-button"></div>
+    </a>
+  </div>
+</section>
+
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate heading
+  gsap.to(".video-section h2", {
+    scrollTrigger: {
+      trigger: ".video-section",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // Animate paragraph
+  gsap.to(".video-section p", {
+    scrollTrigger: {
+      trigger: ".video-section",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    delay: 0.3,
+    ease: "power3.out"
+  });
+
+  // Animate video thumbnail with parallax subtle effect
+  gsap.to(".video-thumbnail", {
+    scrollTrigger: {
+      trigger: ".video-section",
+      start: "top 80%",
+    },
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    duration: 1,
+    delay: 0.6,
+    ease: "power3.out"
+  });
+
+  // Optional: parallax movement on scroll for thumbnail
+  gsap.to(".video-thumbnail", {
+    y: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".video-section",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+});
+</script>
+
+</body>
+</html>
