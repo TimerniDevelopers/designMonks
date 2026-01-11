@@ -1184,7 +1184,7 @@ a{
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 550px;
+  min-width: 575px;
   background: #fff;
   box-shadow: 0px 4px 16px -2px rgba(15, 23, 42, 0.08);
   padding: 12px;
@@ -1223,7 +1223,7 @@ a{
 .menu-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 15px;
 }
 .menu-left-wrapper {
     border: 1px solid #ddd;
@@ -1241,15 +1241,13 @@ a{
     overflow: hidden;
 }
 .menu-left-img{
-    height: 10rem;
+    height: 16rem;
     overflow: hidden;
     position: relative;
 
 }
 
 .menu-left-wrapper img{
-    height: 10rem;
-    object-fit: cover;
     width: 100%;
     height: 100%;
     transition: transform .3s ease-in-out;
@@ -1284,7 +1282,7 @@ a{
     font-family: "ClashDisplay-Regular";
    color: #737373;
     letter-spacing: .02em;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 5px;
 }
 .header-sticky .logo {
@@ -1594,6 +1592,9 @@ a{
 }
 .ratting-content{
     text-align: center;
+}
+.banner-carousel .banner-item .ratting-content {
+    margin-top: 0px;
 }
 /* .home-banner{
     padding-bottom: 460px;
@@ -1973,9 +1974,9 @@ a{
 .padding-right-50{
     padding-right: 50px;
 }
-/* .work-wrapper .row{
+.work-wrapper .row{
     margin-bottom: 70px;
-} */
+}
 
 .work-details{
     position: relative;
@@ -2350,7 +2351,9 @@ a{
 .faq-area {
     padding: 80px 0px;
 }
-
+.faq-area .accordion{
+    margin-top: 20px;
+}
 .faq-area .accordion-item {
     margin-bottom: 24px;
     background: #F1EEFF;
@@ -2364,10 +2367,13 @@ a{
     padding: 5px 24px 24px;
     margin-top: -7px;
     color: #68686A;
-}
-.faq-area  .accordion-button {
+} 
+.faq-area .accordion-header{
     font-family: "ClashDisplay-Medium";
-    font-size: 22px;
+}
+.faq-area .accordion-button {
+    font-family: "ClashDisplay-Medium";
+    font-size: 18px;
     font-weight: 500;
     color: #030307;
     text-decoration: none;
@@ -2378,15 +2384,21 @@ a{
     border: 0;
     border-radius: 16px;
 }
-.faq-area .accordion-body ol {
+.faq-area .accordion-body ul {
     padding-left: 24px;
     margin-bottom: 0px;
+    list-style: disc;
 }
-.faq-area .accordion-body ol li{
+.faq-area .accordion-body ul li{
     margin-bottom: 9px;
+    color: #000;
+    font-weight: 300;
 }
-.faq-area .accordion-body >p{
+.faq-area .accordion-body >p {
     margin-bottom: 10px;
+    font-family: "ClashDisplay-Regular";
+    color: #000000cf;
+    font-size: 17px;
 }
 .faq-area .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: 16px;
@@ -2420,7 +2432,7 @@ a{
 /* small mobile  */
 @media (max-width: 991px) {
     .faq-area .accordion-button{
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
@@ -3008,7 +3020,7 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 /* team area */
 .team-area{
-    padding: 100px 0px;
+    padding: 100px 0px 40px;
     background: var(--primary);
 }
 .team-profile .team-info p{
@@ -3532,6 +3544,7 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    height: 100%;
 }
 .case-icon-desc .case-icon{
     display: inline-block;
@@ -3540,6 +3553,7 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 .case-icon-desc h3{
     padding: 15px 0px;
+    font-size: 1.25rem;
 }
 .single-top-tes p {
     font-size: 20px;
@@ -4158,7 +4172,11 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 .calender-item h6 {
     font-family: "ClashDisplay-Medium";
+    font-size:1.2rem
 }
+.calender-item  small {
+    font-size: .975em;
+} 
 .calender-item .default-btn {
     max-width: 170px;
 }
@@ -4257,11 +4275,16 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     margin-top: 100px;
 }
 .work-area-details .work-description {
-    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.work-area-details .work-description.mt_80 {
+    margin-top: -20px;
+    position: relative;
 }
 .work-area-details .work-description-title {
         font-size: 25px;
         margin-top: 20px;
+        color: var(--primary);
     }
 .work-area.case-study-one {
     padding: 50px 0px;
@@ -4271,8 +4294,11 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     font-weight: 600;
 }
 
+
+
+
 /* SECTION */
-.customer-profile {
+.customer-profile-wrapper {
   background: #0b0b0b !important;
   padding: 70px 0;
   color: #fff;
@@ -4313,9 +4339,62 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     margin-top: 50px;
 }
 
+.packages-g-content h4{ 
+    font-size: 1.25rem;
+}
+
+.package-slider .packages-item-c h3{
+    margin-top: 15px;
+}
 
 
 
+
+    .faq-area{
+        background-color: #f0f8fa;
+    }
+    .faq-warpper .search-form{
+       width: 100%;
+        max-width: 100%;
+            box-shadow: 0 10px 10px #e8f1f8;
+    }
+    .faq-box-title {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .faq-box-wrapper {
+        position: relative;
+        padding: 30px 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 10px #e8f1f8;
+        -webkit-transition: .4s ease-out;
+        -ms-transition: .4s ease-out;
+        transition: .4s ease-out;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+    }
+    .faq-box-wrapper:hover{
+        box-shadow: 0 10px 10px #b3d4fc66;
+        transform: scale(1.05);
+    }
+    
+    .faq-box-wrapper p{
+        font-weight: 500;
+        margin-top: 10px;
+        color: #212529;
+    }
+    .faq-box-wrapper >img{
+        max-width: 110px;
+        max-height: 110px;
+    }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
     .section-title {
@@ -4403,6 +4482,13 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
     .work-area-details .work-description {
         margin-bottom: 70px;
     }
+    .project-header h5 {
+        font-size: 1rem;
+    }
+    .packages-g-content h4{ 
+        font-size: 1rem;
+    }
+
 
 }
 /* default.tiitle */
@@ -4437,7 +4523,7 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
         margin-top: 0px;
     }
     .team-area {
-        padding: 70px 0px;
+        padding: 60px 0px 35px;
     }
     .budget-btn button{
         margin-bottom: 10px;
@@ -4503,7 +4589,7 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
         padding: 50px 0px;
     }
     .case-box-content h3, .partner-box-content h3, .choose-box-content h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .service-box-title {
         color: #fff;
@@ -4554,6 +4640,12 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 @media (max-width: 991px) {
     .dm-service-title {
     font-size: 25px;
+    }
+     .case-box-content h3, .partner-box-content h3, .choose-box-content h3 {
+        font-size: 21px;
+    }
+    .faq-area  .accordion-button {
+        font-size: 18px;
     }
 }
 @media (min-width: 768px) and (max-width:991px) {
@@ -4743,6 +4835,4 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 
     }
 }
-.case-win-slider{
-    display: block;
-}
+
