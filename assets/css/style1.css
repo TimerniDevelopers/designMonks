@@ -4835,4 +4835,16 @@ cubic-bezier(0.98, 0.57, 1, 1) 0s;
 
     }
 }
+/* Desktop */
+@media (min-width: 992px) {
+  .mean-container {
+    display: none !important;
+  }
+}
+/* Mobile */
+@media (max-width: 991px) {
+  .main-menu {
+    display: none;
+  }
+}
 
